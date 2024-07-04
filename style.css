@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 109vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(2, 6, 20, 0.7), rgba(6, 19, 77, 0.7)), url(image/zdenek-machacek-boCk0rIiOSw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 500px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-right: 100px;
+    transition: 1s;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 8px 12px;
+    position: relative;
+    margin-left: 17px;
+    transition: 0.2s;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.nav-links ul li a:hover {
+    color: rgb(31, 5, 48);
+}
+
+.nav-links ul li ::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: rgb(31, 5, 48);
+    margin: auto;
+    transition: 0.2s;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.visit {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 22px;
+    background: transparent;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.visit:hover {
+    background: rgb(31, 5, 48);
+    border: 1px solid rgb(31, 5, 48);
+    transition: 0.2s;
+    border-radius: 20px;
+    padding: 14px 24px;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width:700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: rgb(31, 5, 48);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cours-col {
+    flex-basis: 30%;
+    background: #e2cfcf;
+    border-radius: 15px;
+    margin-bottom: 6px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 2px;
+}
+
+.cours-col:hover {
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.ux {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.ux-col {
+    flex-basis: 30%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ux-col img {
+    width: 100%;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.layer:hover {
+    background: rgba(15, 50, 59, 0.2);
+}
+
+.layer h2 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.layer:hover h2 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.urls {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.url-col {
+    flex-basis: 30%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.url-col img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.url-col p {
+    padding: 0;
+}
+
+.url-col h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.name-person {
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.person {
+    flex-basis: 45%;
+    background: #aca5f0;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.person img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.person p {
+    padding: 0;
+}
+
+.person h3 {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.pic-head {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(image/php-code-1242330.webp);
+    width: 80%;
+    margin: 100px auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.pic-head h1 {
+    margin-bottom: 30px;
+    padding: 0;
+    color: #fff;
+}
